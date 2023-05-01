@@ -1,0 +1,39 @@
+Q. What is Ruby?
+A. Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write. (http://www.ruby-lang.org/en/about/)
+
+Q. Features of Ruby?
+A. 1. true object oriented language
+2. simple syntax
+3. dynamically typed
+4. garbage collection
+
+Q. What is a variable in Ruby?
+A. A variable is a reference to the memory location where the actual data is stored. Variables are created by assigning a value to them. The value assigned can be a number, a string, a regular expression, a hash reference, an array reference, a subroutine reference, or a typeglob. 
+e.g. a = 10 (here a is a variable)
+
+==> Rules for variables:
+1. A variable name must begin with a letter or an underscore.
+2. A variable name cannot begin with a digit.
+3. A variable name can contain only alphanumeric characters and underscores.
+4. Variable names are case-sensitive.
+5. Ruby reserves 31 words as keywords, so you cannot use them as variable names.
+
+Q. What is a constant in Ruby?
+A. Constants begin with an uppercase letter. Constants defined within a class or module can be accessed from within that class or module, and those defined outside a class or module can be accessed globally. 
+e.g. PI = 3.1416 (here PI is a constant)
+
+==> Rules for constants:
+1. A constant name must begin with an uppercase letter.
+2. A constant name cannot begin with a digit.
+3. A constant name can contain only alphanumeric characters and underscores.
+4. Constant names are case-sensitive.
+5. Ruby reserves 31 words as keywords, so you cannot use them as constant names.
+
+Q. What is a symbol in Ruby?
+A. A symbol is an instance of the built-in class Symbol. Symbols are used in Ruby to represent things such as method names and operator names. A symbol literal is a colon followed by an identifier. Symbols are not variables and cannot be assigned values.
+
+Q. What is a string in Ruby?
+A. A string is a sequence of one or more characters that may consist of letters, numbers, or symbols. Strings in Ruby are objects, and unlike other languages, strings are mutable, which means they can be changed in place instead of creating new strings.
+
+Q. what is the difference between a symbol and a string?
+A. Strings are mutable, whereas symbols are immutable. Strings are slower than symbols. Symbols are useful when you want to use the same value multiple times throughout your program, and you don’t intend to change it.   
