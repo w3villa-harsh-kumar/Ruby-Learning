@@ -1,0 +1,33 @@
+# Module => A module is a collection of behaviors that is useable in other classes via mixins. 
+# Mixins => A mixin is a module that is mixed in with a class using the include method invocation. 
+# Modules are also used as a namespace.
+# Namespacing => Namespacing is where similar classes are grouped within a module. This is done to avoid collision of method names and to clarify the code.
+
+module Crud
+  require 'bcrypt'
+  puts "Module CRUD activated"
+ 
+  def create_hash_digest(password)
+    BCrypt::Password.create(password)
+  end
+ 
+  def verify_hash_digest(password)
+    BCrypt::Password.new(password)
+  end
+ 
+  def create_secure_users(list_of_users)
+    list_of_users.each do |user_record|
+      user_record[:password] = create_hash_digest(user_record[:password])
+    end
+    list_of_users
+  end
+ 
+  def authenticate_user(username, password, list_of_users)
+    list_of_users.each do |user_record|
+      if user_record[:username] == username && verify_hash_digest(user_record[:password]) == password
+        return user_record
+      end
+    end
+    "Credentials were not correct"
+  end
+end

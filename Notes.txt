@@ -31,9 +31,107 @@ e.g. PI = 3.1416 (here PI is a constant)
 
 Q. What is a symbol in Ruby?
 A. A symbol is an instance of the built-in class Symbol. Symbols are used in Ruby to represent things such as method names and operator names. A symbol literal is a colon followed by an identifier. Symbols are not variables and cannot be assigned values.
+e.g. :name (here :name is a symbol)
 
 Q. What is a string in Ruby?
 A. A string is a sequence of one or more characters that may consist of letters, numbers, or symbols. Strings in Ruby are objects, and unlike other languages, strings are mutable, which means they can be changed in place instead of creating new strings.
+e.g. "Hello World!" (here "Hello World!" is a string)
 
 Q. what is the difference between a symbol and a string?
 A. Strings are mutable, whereas symbols are immutable. Strings are slower than symbols. Symbols are useful when you want to use the same value multiple times throughout your program, and you don’t intend to change it.   
+
+Q. What is OOPs in Ruby?
+A. Object-oriented programming (OOP) is a programming paradigm that uses objects and their interactions to design applications and computer programs. Ruby is a pure object-oriented language, which means everything in Ruby is an object, including numbers, strings, and even classes and methods.
+=> Ruby is a pure object-oriented language, which means everything in Ruby is an object, including numbers, strings, and even classes and methods.
+
+=> Basic OOPs concepts:
+Encapsulation - wrapping up of data under a single unit. It is the mechanism that binds together code and the data it manipulates. In Ruby, a class is used to encapsulate data and methods that operate on that data.
+
+Abstraction - is used to hide the internal functionality of the method from the users. The users only interact with the basic implementation of the method, but inner working is hidden. In Ruby, a module is used to achieve abstraction.
+
+Inheritance - is a mechanism where one class acquires the properties (methods and fields) of another. In Ruby, a class can inherit from another class using the < symbol.
+
+Polymorphism - is the ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object. In Ruby, polymorphism is achieved by duck typing.
+
+Q. What is a class in Ruby?
+A. A class is a blueprint for creating objects. A class encapsulates data for the object. Ruby classes are defined with the class keyword followed by the class name. The body of a class definition contains the methods associated with the class.
+e.g. class MyClass
+        def my_method
+          puts "Hello World!"
+        end
+      end
+
+Q. What is an object in Ruby?
+A. An object is an instance of a class. Objects are created from classes using the new method. Objects can be assigned to variables, passed as arguments to methods, and returned as the value of a method.
+e.g. my_object = MyClass.new
+
+Q. What is a module in Ruby?
+A. A module is a collection of methods and constants. Modules are defined using the module keyword followed by the module name. The body of a module definition contains the methods associated with the module. Modules are similar to classes in that they contain a collection of methods; however, you cannot instantiate a module.
+e.g. module MyModule
+        def my_method
+          puts "Hello World!"
+        end
+      end
+
+=> What is the difference between a class and a module?
+A. A class can be instantiated, whereas a module cannot. A class can be inherited, whereas a module cannot. A class can be used to create objects, whereas a module cannot. A class can have subclasses, whereas a module cannot.
+
+Q. What is instance variable in Ruby?
+A. An instance variable is a variable that is accessible in any instance method in a particular instance of a class. Instance variables are preceded by the at sign (@) followed by the variable name. Instance variables are used to store the state of an object.
+e.g. @name = "Ruby" (here @name is an instance variable)
+
+Q. What is class variable in Ruby?
+A. A class variable is a variable that is shared among all instances of a class. Class variables are preceded by the at sign (@@) followed by the variable name. Class variables are used to store data that is shared among all instances of a class.
+e.g. @@count = 0 (here @@count is a class variable)
+
+Q. What is global variable in Ruby?
+A. A global variable is a variable that is accessible everywhere in the program. Global variables are preceded by the dollar sign ($) followed by the variable name. Global variables are used to store data that is accessible everywhere in the program.
+e.g. $name = "Ruby" (here $name is a global variable)
+
+Q. What is local variable in Ruby?
+A. A local variable is a variable that is accessible only within the block of code where it is defined. Local variables are not available outside the block of code where they are defined. Local variables are not preceded by any special symbol.
+e.g. name = "Ruby" (here name is a local variable)
+
+=> What is the difference between a class variable and a global variable?
+A. Class variables are accessible only within the class where they are defined, whereas global variables are accessible everywhere in the program.
+
+=> What is the difference between a class variable and an instance variable?
+A. Class variables are shared among all instances of a class, whereas instance variables are accessible only within a particular instance of a class.
+
+=> What is the difference between a class variable and a local variable?
+A. Class variables are accessible everywhere in the class where they are defined, whereas local variables are accessible only within the block of code where they are defined.
+
+=> What is the difference between a global variable and a local variable?
+A. Global variables are accessible everywhere in the program, whereas local variables are accessible only within the block of code where they are defined.
+
+=> What is the difference between an instance variable and a local variable?
+A. Instance variables are accessible within a particular instance of a class, whereas local variables are accessible only within the block of code where they are defined.
+
+Q. What is a method in Ruby?
+A. A method is a set of statements that perform a specific task. Methods are defined within a class and are associated with the class. Methods are similar to functions in other programming languages. Methods are defined using the def keyword followed by the method name. The body of a method definition contains the statements that are executed when the method is called.
+e.g. def method_name
+      # method body
+    end
+
+=> What is mixin in Ruby?
+A. Mixin is a way of including methods from a module in a class. Mixin is similar to inheritance, but unlike inheritance, you can include methods from multiple modules in a class. Mixin is used to share functionality among classes without using inheritance.
+e.g. module MyModule
+      def my_method
+        puts "Hello World!"
+      end
+    end
+
+    class MyClass
+      include MyModule
+    end
+
+    obj = MyClass.new
+    obj.my_method
+
+Q. What is a block in Ruby?
+A. A block is a set of statements that are executed sequentially. Blocks are enclosed in curly braces ({}). Blocks can be passed to methods as arguments. Blocks are similar to anonymous functions in other programming languages.
+e.g. { puts "Hello World" }
+
+Q. What is a lambda in Ruby?
+A. A lambda is a block of code that can be passed to a method as an argument. Lambdas are similar to blocks, but unlike blocks, lambdas can be executed multiple times. Lambdas are defined using the lambda keyword followed by the lambda name. The body of a lambda definition contains the statements that are executed when the lambda is called.
+e.g. lambda { puts "Hello World" }
