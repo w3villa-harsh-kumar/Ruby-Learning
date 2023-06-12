@@ -57,10 +57,29 @@ p arr[-5] # => 1
 # Syntax: array_name[start_index..end_index]
 
 arr = [1, 2, 3, 4, 5]
-p arr[0..2] # => [1, 2, 3]
+p "Slicing an array using range operator"
+p arr[0..2] # => [1, 2, 3] 
 p arr[0...2] # => [1, 2]
 p arr[1..3] # => [2, 3, 4]
 p arr[1...3] # => [2, 3]
+
+# Slicing an array using slice method
+# Syntax: array_name.slice(start_index, length)
+p "Slicing an array using slice method"
+p arr.slice(0, 3) # => [1, 2, 3]
+p arr.slice(0, 2) # => [1, 2]
+p arr.slice(1, 3) # => [2, 3, 4]
+p arr.slice(1, 2) # => [2, 3]
+
+# Slicing
+# Syntax: array_name[start_index, length]
+p "Slicing an array using start_index, length"
+p arr[1, 3] # => [2, 3, 4]
+p arr[1, 2] # => [2, 3]
+p arr[0, 3] # => [1, 2, 3]
+p arr[0, 2] # => [1, 2]
+
+
 
 # Adding elements to an array
 # Syntax: array_name << object

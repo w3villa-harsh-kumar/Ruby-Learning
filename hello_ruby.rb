@@ -18,7 +18,7 @@ def greeting( name, message )
     puts "Hello #{name}, #{message} "
 end
 
-greeting("Harsh Kumar", "Good Morning!")
+greeting("Harsh Kumar", "Good Morning!") # greeting "Harsh Kuamar", "Good Morning!"
 
 # Variables Referencing in Ruby
 first_name = "Harsh"
@@ -49,21 +49,7 @@ end
 # 5. SCREAMING_SNAKE_CASE => Used for naming constants
 PI = 3.14
 
-# 6. snake_case? => Used for naming boolean variables
-is_ruby_cool? = true
-
-# 7. snake_case! => Used for naming destructive methods
+# 6. snake_case! => Used for naming destructive methods
 def reverse!(str)
 end
 
-# 8. snake_case= => Used for naming setter methods
-def first_name=(name)
-end
-
-# 9. snake_case => Used for naming getter methods
-def first_name
-end
-
-# 10. snake_case => Used for naming predicate methods
-def is_ruby_cool?
-end 

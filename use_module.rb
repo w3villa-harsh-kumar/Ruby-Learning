@@ -13,3 +13,6 @@ hashed_users = Crud.create_secure_users(users)
 
 authenticated_user = Crud.authenticate_user("mashrur", "password1", hashed_users)
 puts authenticated_user
+
+constant = Crud::NAME
+puts constant

@@ -1,15 +1,15 @@
 # User Input in Ruby
 # Ways to take user input in Ruby
 
-# 1. gets => takes input from user and returns a string
+# 1. gets => takes input from user and returns a string with a new line
 print "Enter your name: "
 name = gets
-print "Hello, #{name}"
+print "Hello, #{name}, Welcome to the world of Ruby!"
 
 # 2. gets.chomp => takes input from user and returns a string without a new line
 print "Enter your name: "
 name = gets.chomp
-print "Hello, #{name}"
+print "Hello, #{name}, Welcome to the world of Ruby!"
 
 # 3. gets.chomp.to_i => takes input from user and returns a integer
 print "Enter your age: "
@@ -23,7 +23,7 @@ print "Your age is #{age}"
 
 # 5. gets.chomp.to_s => takes input from user and returns a string
 print "Enter your age: "
-age = gets.chomp.to_s
+age = gets.chomp.to_s # => This is not required as gets.chomp returns a string
 print "Your age is #{age}"
 
 # 6. gets.chomp.to_b => takes input from user and returns a boolean

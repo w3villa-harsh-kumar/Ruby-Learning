@@ -22,7 +22,7 @@ puts 1 - 1 # => 0
 puts 1 * 1 # => 1
 puts 1 / 1 # => 1
 puts 1 % 1 # => 0
-puts 1 ** 1 # => 1
+puts 1 ** 1 # => 1 # power of 1 => 1 ^ 1 => 1
 
 # Methods
 # .next => Returns the next number
@@ -94,3 +94,47 @@ puts rand(10) # => 5 (random number) => between 0 and 10
 
 # Generate a random number between 0 and 100
 puts rand(100) # => 50 (random number) => between 0 and 100
+
+# Maths Class
+puts Math::PI # => 3.141592653589793 => :: is called scope resolution operator => It is used to access constants, methods, and classes defined in a module
+puts Math::E # => 2.718281828459045
+puts Math.sqrt(4) # => 2.0 => . is called dot operator => It is used to access methods defined in a module
+puts Math::sqrt(4) # => 2.0
+puts Math.sqrt(4).class # => Float
+
+# Math Methods
+# .sqrt => Returns the square root of the number
+puts Math.sqrt(4) # => 2.0
+
+# .cbrt => Returns the cube root of the number
+puts Math.cbrt(8) # => 2.0
+
+# .exp => Returns e (Euler's number) raised to the power of the number
+puts Math.exp(1) # => 2.718281828459045
+
+# .log => Returns the natural logarithm of the number
+puts Math.log(2) # => 0.6931471805599453
+
+# .log10 => Returns the base 10 logarithm of the number
+puts Math.log10(10) # => 1.0
+
+# .log2 => Returns the base 2 logarithm of the number
+puts Math.log2(2) # => 1.0
+
+# .sin => Returns the sine of the number
+puts Math.sin(90) # => 0.8939966636005579
+
+# .cos => Returns the cosine of the number
+puts Math.cos(90) # => -0.4480736161291701
+
+# .tan => Returns the tangent of the number
+puts Math.tan(90) # => -1.995200412208242
+
+# .asin => Returns the arc sine of the number
+puts Math.asin(1) # => 1.5707963267948966
+
+# .acos => Returns the arc cosine of the number
+puts Math.acos(1) # => 0.0
+
+# .atan => Returns the arc tangent of the number
+puts Math.atan(1) # => 0.7853981633974483

@@ -6,6 +6,8 @@
 module Crud
   require 'bcrypt'
   puts "Module CRUD activated"
+
+  NAME = "Harsh Kumar"
  
   def create_hash_digest(password)
     BCrypt::Password.create(password)

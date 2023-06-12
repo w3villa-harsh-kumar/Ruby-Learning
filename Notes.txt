@@ -135,3 +135,25 @@ e.g. { puts "Hello World" }
 Q. What is a lambda in Ruby?
 A. A lambda is a block of code that can be passed to a method as an argument. Lambdas are similar to blocks, but unlike blocks, lambdas can be executed multiple times. Lambdas are defined using the lambda keyword followed by the lambda name. The body of a lambda definition contains the statements that are executed when the lambda is called.
 e.g. lambda { puts "Hello World" }
+
+Q. What is the difference between include and extend in Ruby?
+A. The include method is used to include methods from a module in a class, whereas the extend method is used to extend the functionality of a class with methods from a module. The include method is used to add methods to an instance of a class, whereas the extend method is used to add methods to the class itself.
+e.g. module MyModule
+      def my_method
+        puts "Hello World!"
+      end
+    end
+
+    class MyClass
+      include MyModule
+    end
+
+    obj = MyClass.new
+    obj.my_method
+
+    class MyClass
+      extend MyModule
+    end
+
+    MyClass.my_method
+

@@ -1,4 +1,4 @@
-# Strings in Ruby
+# Strings in Ruby => A string is a sequence of characters between " or '. In Ruby, strings are mutable, which means they can be changed after they are created. Ruby has many methods that allow us to manipulate strings.
 
 # Ways to define string in Ruby
 # => Single Quotes => 'Hello, Ruby!' => No String Interpolation
@@ -7,6 +7,7 @@
 # 1. String interpolation
 first_name = "Harsh"
 last_name = "Kumar"
+# first_name[0] = "A" => This will print Aarsh Kumar because strings are mutable in Ruby and we can change the value of a string
 
 full_name = "#{first_name} #{last_name}"
 puts full_name
@@ -14,6 +15,7 @@ puts full_name
 # String Concatination
 full_name = first_name + " " + last_name
 puts full_name # => Harsh Kumar
+
 
 # Used to know the class of a variable
 puts full_name.class # => String
@@ -23,6 +25,8 @@ puts full_name.methods # => List of methods available on a variable
 
 # To know the length of a string use .length
 puts full_name.length # => 11
+puts full_name.size # => 11 => size is an alias of length
+puts full_name.bytesize # => 11 => bytesize is an alias of length
 
 # Used to reverse of a string use .reverse
 puts full_name.reverse # => ramuK hsraH
